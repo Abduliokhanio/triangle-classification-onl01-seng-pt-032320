@@ -15,8 +15,7 @@ class Triangle
         :isosceles
       elsif @uno != @dos && @uno == @trs
         :isosceles
-      elsif condition
-         :scalene
+
       end
     end
 
