@@ -17,9 +17,17 @@ class Triangle
           when 2 then :isosceles
           when 3 then :scalene
          end
-      end
-
+       else
+         begin
+          raise RangeError
+         rescue RangeError => error
+          puts error.message
+        end# begin
+      end #if
     end#kind method
+
+    class TriangleError < StandardError
+    end # error
 
   end#initialization
 end#class
