@@ -10,7 +10,7 @@ class Triangle
 
     def kind
 
-      if (@uno,@dos,@trs == 0)
+      if (@uno,@dos,@trs = 0)
         raise RangeError
       else
       sides = [@uno, @dos, @trs].uniq
