@@ -16,6 +16,9 @@ class Triangle
         when 3 then :scalene
        end
 
+       class TriangleError < StandardError
+       end
+
     end#kind method
 
   end#initialization
