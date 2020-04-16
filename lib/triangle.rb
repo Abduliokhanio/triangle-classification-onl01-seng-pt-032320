@@ -27,6 +27,9 @@ class Triangle
     end#kind method
 
     class TriangleError < StandardError
+      def message
+        "nono"
+      end #message method
     end #error
 
   end#initialization
