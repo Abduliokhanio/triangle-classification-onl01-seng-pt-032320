@@ -4,7 +4,12 @@ class Triangle
 
   def initialize(uno,dos,trs)
 
+    @uno = uno
+    @dos = dos
+    @trs = trs
+
     def kind
+      if
     end
 
   end
