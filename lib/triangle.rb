@@ -10,7 +10,7 @@ class Triangle
 
     def kind
 
-      if @uno != 0 && @dos != 0 && @trs != 0 || @uno !< 0 || @dos !< 0 || @trs !< 0
+      if @uno != 0 && @dos != 0 && @trs != 0 && @uno > 0 && @dos > 0 && @trs > 0
         sides = [@uno, @dos, @trs].uniq
         type = case sides.length
           when 1 then :equilateral
