@@ -9,17 +9,12 @@ class Triangle
     @trs = trs
 
     def kind
-      if @uno == @dos && @uno == @trs
-        :equilateral
-      elsif (@uno == @dos) && ((@uno || @dos) != @tres)
-        :isosceles
-      elsif (@uno == @tres) && ((@uno || @tres) != @dos)
-        :isosceles
-      elsif (@dos == @tres) && ((@dos || @tres) != @uno)
-        :isosceles
-      else
-        :scalene
-      end #if/else
+      sides = [@uno, @dos, @trs].uniq
+      type = case sides.length
+        when 1 then :equilateral
+        when 2 then :isosceles
+        when 3 then :scalene
+       end
 
     end#kind method
 
