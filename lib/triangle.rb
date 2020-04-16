@@ -21,7 +21,7 @@ class Triangle
         raise TriangleError, "Does not satisfy triangle inequality"
         end
 
-        unless @dos+@trs > @uno
+        unless @dos+@trs < @uno
         raise TriangleError, "Does not satisfy triangle inequality"
         end
 
