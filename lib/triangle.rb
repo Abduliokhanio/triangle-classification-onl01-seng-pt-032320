@@ -12,6 +12,11 @@ class Triangle
 
       if @uno > 0 && @dos > 0 && @trs > 0
         sides = [@uno, @dos, @trs].uniq
+
+        unless @uno+@dos > @trs
+        raise TriangleError, "Does not satisfy triangle inequality"
+        end
+
         type = case sides.length
           when 1 then :equilateral
           when 2 then :isosceles
