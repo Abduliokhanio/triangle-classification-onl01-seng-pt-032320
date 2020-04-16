@@ -27,7 +27,7 @@ class Triangle
     end#kind method
 
     class TriangleError < StandardError
-    end # error
+    end #error
 
   end#initialization
 end#class
