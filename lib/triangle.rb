@@ -17,6 +17,10 @@ class Triangle
         raise TriangleError, "Does not satisfy triangle inequality"
         end
 
+        unless @uno+@trs > @dos
+        raise TriangleError, "Does not satisfy triangle inequality"
+        end
+
         type = case sides.length
           when 1 then :equilateral
           when 2 then :isosceles
