@@ -10,16 +10,14 @@ class Triangle
 
     def kind
 
-      if (@uno,@dos,@trs = 0)
-        raise RangeError
-      else
+      if @uno != 0 && @dos != 0 && @trs != 0
       sides = [@uno, @dos, @trs].uniq
       type = case sides.length
         when 1 then :equilateral
         when 2 then :isosceles
         when 3 then :scalene
        end
-     end
+
 
     end#kind method
 
