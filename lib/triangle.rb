@@ -18,7 +18,7 @@ class Triangle
           when 3 then :scalene
          end
        else
-         RangeError
+          raise RangeError
       end #if
     end#kind method
 
