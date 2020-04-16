@@ -11,11 +11,8 @@ class Triangle
     def kind
       if @uno == @dos && @uno == @trs
         :equilateral
-      elsif @uno == @dos && @uno != @trs
+      elsif (@uno == @dos && @uno != @trs) || (@uno != @dos && @uno == @trs)
         :isosceles
-      elsif @uno != @dos && @uno == @trs
-        :isosceles
-
       end
     end
 
