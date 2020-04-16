@@ -13,6 +13,8 @@ class Triangle
         :equilateral
       elsif @uno == @dos && @uno != @trs
         :isosceles
+      elsif @uno != @dos && @uno == @trs
+        :isosceles
       elsif condition
          :scalene
       end
