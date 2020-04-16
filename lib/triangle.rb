@@ -9,7 +9,7 @@ class Triangle
     @trs = trs
 
     def kind
-      if @uno == @dos == @trs
+      if @uno == @dos && @uno == @trs
         :equilateral
       end
     end
