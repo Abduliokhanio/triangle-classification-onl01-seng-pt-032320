@@ -20,13 +20,13 @@ class Triangle
        else
          begin
           raise RangeError
-         
+
         end# begin
       end #if
     end#kind method
 
   end#initialization
-  
+
   class TriangleError < StandardError
     def message
       "nono"
