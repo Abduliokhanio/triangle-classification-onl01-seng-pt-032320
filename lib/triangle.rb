@@ -1,3 +1,8 @@
 class Triangle
-  # write code here
+
+  attr_accessor :uno, :dos, :tres
+
+  def initialize(:uno,:dos,:trs)
+  end
+
 end
